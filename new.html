@@ -1,0 +1,27 @@
+<html>
+<script type="text/javascript">
+    var img_array = ["RONNIE.jpg", "BUBBLU.JPG", "MOM.jpg", "PAPA.JPG"]
+    
+    var num = 0;
+
+   function changepic()
+   {
+
+      if (num>=img_array.length){
+         num=0;
+      }
+      
+      document.family.src=img_array[num];
+      num=num+1;
+   }
+
+  </script>
+  </head>
+
+ <body>
+ <center>
+   <img src="Black and Red Laser Games Logo.png" name="family" width="400" height="400" onmouseover = "javascript:changepic();"/>
+   <!-- <p><A href="javascript:changepic();">next</A></p> -->
+</center>
+</body>
+</html>
